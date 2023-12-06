@@ -9,89 +9,125 @@
       <li>
         <div>
           <button (click)="toggleNode(0)" style="margin-right: 1rem;">
-            <i *ngIf="isNodeExpanded" class="fas fa-arrow-down"></i>
-            <i *ngIf="!isNodeExpanded" class="fas fa-arrow-right"></i>
+            <i *ngIf="isNodeExpanded[0]" class="fas fa-arrow-down"></i>
+            <i *ngIf="!isNodeExpanded[0]" class="fas fa-arrow-right"></i>
           </button>
-          <span contenteditable="true"><strong>Active business</strong></span>
+          <span contenteditable="true" spellcheck="false"><strong>Active business</strong></span>
         </div>
-        <ul *ngIf="isNodeExpanded">
+        <ul *ngIf="isNodeExpanded[0]">
           <li>
             <div>
               <button (click)="toggleNode(1)" style="margin-right: 1rem;">
-                <i *ngIf="isNodeExpanded1" class="fas fa-arrow-down"></i>
-                <i *ngIf="!isNodeExpanded1" class="fas fa-arrow-right"></i>
+                <i *ngIf="isNodeExpanded[1]" class="fas fa-arrow-down"></i>
+                <i *ngIf="!isNodeExpanded[1]" class="fas fa-arrow-right"></i>
               </button>
-              <span contenteditable="true">Commercianti - ora <strong>Active Impresa Commercio</strong></span>
+              <span contenteditable="true" spellcheck="false">Commercianti - ora <strong>Active Impresa Commercio</strong></span>
             </div>
-            <ul *ngIf="isNodeExpanded1">
+            <ul *ngIf="isNodeExpanded[1]">
               <li>
                 <div>
                   <button (click)="toggleNode(2)" style="margin-right: 1rem;">
-                    <i *ngIf="isNodeExpanded2" class="fas fa-arrow-down"></i>
-                    <i *ngIf="!isNodeExpanded2" class="fas fa-arrow-right"></i>
+                    <i *ngIf="isNodeExpanded[2]" class="fas fa-arrow-down"></i>
+                    <i *ngIf="!isNodeExpanded[2]" class="fas fa-arrow-right"></i>
                   </button>
-                  <span contenteditable="true">Garanzie</span>
+                  <span contenteditable="true" spellcheck="false">Garanzie</span>
                 </div>
-                <ul *ngIf="isNodeExpanded2">
+                <ul *ngIf="isNodeExpanded[2]">
                   <li>
-                  <span contenteditable="true">Incendi</span>
-                  <ul>
+                    <div>
+                      <button (click)="toggleNode(3)" style="margin-right: 1rem;">
+                        <i *ngIf="isNodeExpanded[3]" class="fas fa-arrow-down"></i>
+                        <i *ngIf="!isNodeExpanded[3]" class="fas fa-arrow-right"></i>
+                      </button>
+                      <span contenteditable="true" spellcheck="false">Incendi</span>
+                    </div>
+                  <ul *ngIf="isNodeExpanded[3]">
                     <li>
-                      <span contenteditable="true">...</span>
+                      <span contenteditable="true" spellcheck="false">...</span>
                     </li>
                     <li>
-                      <span contenteditable="true">...</span>
+                      <span contenteditable="true" spellcheck="false">...</span>
                     </li>
                   </ul>
                   </li>
                   <li>
-                    <span contenteditable="true">Merci trasportate</span>
-                    <ul>
+                    <div>
+                      <button (click)="toggleNode(4)" style="margin-right: 1rem;">
+                        <i *ngIf="isNodeExpanded[4]" class="fas fa-arrow-down"></i>
+                        <i *ngIf="!isNodeExpanded[4]" class="fas fa-arrow-right"></i>
+                      </button>
+                      <span contenteditable="true" spellcheck="false">Merci trasportate</span>
+                    </div>
+                    <ul *ngIf="isNodeExpanded[4]">
                       <li>
-                        <span contenteditable="true">Caratteristiche generali</span>
-                        <ul>
+                        <div>
+                          <button (click)="toggleNode(5)" style="margin-right: 1rem;">
+                            <i *ngIf="isNodeExpanded[5]" class="fas fa-arrow-down"></i>
+                            <i *ngIf="!isNodeExpanded[5]" class="fas fa-arrow-right"></i>
+                          </button>
+                          <span contenteditable="true" spellcheck="false">Caratteristiche generali</span>
+                        </div>
+                        <ul *ngIf="isNodeExpanded[5]">
                           <li>
-                            <span contenteditable="true">...</span>
+                            <span contenteditable="true" spellcheck="false">...</span>
                           </li>
                           <li>
-                            <span contenteditable="true">...</span>
+                            <span contenteditable="true" spellcheck="false">...</span>
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <span contenteditable="true">Esclusioni</span>
-                        <ul>
+                        <div>
+                          <button (click)="toggleNode(6)" style="margin-right: 1rem;">
+                            <i *ngIf="isNodeExpanded[6]" class="fas fa-arrow-down"></i>
+                            <i *ngIf="!isNodeExpanded[6]" class="fas fa-arrow-right"></i>
+                          </button>
+                          <span contenteditable="true" spellcheck="false">Esclusioni</span>
+                        </div>
+                        <ul *ngIf="isNodeExpanded[6]">
                           <li>
-                            <span contenteditable="true">...</span>
+                            <span contenteditable="true" spellcheck="false">...</span>
                           </li>
                           <li>
-                            <span contenteditable="true">...</span>
+                            <span contenteditable="true" spellcheck="false">...</span>
                           </li>
                         </ul>
                       </li>
                       <li>
-                        <span contenteditable="true">Sotto-garanzie</span>
-                        <ul>
+                        <div>
+                          <button (click)="toggleNode(7)" style="margin-right: 1rem;">
+                            <i *ngIf="isNodeExpanded[7]" class="fas fa-arrow-down"></i>
+                            <i *ngIf="!isNodeExpanded[7]" class="fas fa-arrow-right"></i>
+                          </button>
+                          <span contenteditable="true" spellcheck="false">Sotto-garanzie</span>
+                        </div>
+                        <ul *ngIf="isNodeExpanded[7]">
                           <li>
-                            <span contenteditable="true">Sgombero della sede stradale</span>
-                            <table *ngIf="isNodeExpanded2" class="table">
+                            <div>
+                              <button (click)="toggleNode(8)" style="margin-right: 1rem;">
+                                <i *ngIf="isNodeExpanded[8]" class="fas fa-arrow-down"></i>
+                                <i *ngIf="!isNodeExpanded[8]" class="fas fa-arrow-right"></i>
+                              </button>
+                              <span contenteditable="true" spellcheck="false">Sgombero della sede stradale</span>
+                            </div>
+                            <table *ngIf="isNodeExpanded[8]" class="table">
                               <tr>
-                                <td contenteditable="true" class="from">FROM (Active Business)</td>
-                                <td contenteditable="true" style="font-weight: 500; padding-left: 1rem;">TO (Active Impresa Commercio)</td>
+                                <td contenteditable="true" spellcheck="false" class="from">FROM (Active Business)</td>
+                                <td contenteditable="true" spellcheck="false" style="font-weight: 500; padding-left: 1rem;">TO (Active Impresa Commercio)</td>
                               </tr>
                               <tr>
-                                <td contenteditable="true" style="padding-right: 1rem;">Non specificato</td>
-                                <td contenteditable="true" style="padding-left: 1rem;">Presente, limite 1.000€, franchigia 250€, franchigia 500€ per i mezzi in qualità di merci trasportate
+                                <td contenteditable="true" spellcheck="false" style="padding-right: 1rem; border-top: 1px solid black; border-right: 1px solid black">Non specificato</td>
+                                <td contenteditable="true" spellcheck="false" style="padding-left: 1rem;  border-top: 1px solid black">Presente, limite 1.000€, franchigia 250€, franchigia 500€ per i mezzi in qualità di merci trasportate
                                 </td>
                               </tr>
                               <tr>
-                                <td contenteditable="true" style="padding-right: 1rem;">Past info</td>
-                                <td contenteditable="true" style="padding-left: 1rem;">New info</td>
+                                <td contenteditable="true" spellcheck="false" style="padding-right: 1rem;  border-top: 1px solid black; border-right: 1px solid black">Past info</td>
+                                <td contenteditable="true" spellcheck="false" style="padding-left: 1rem;  border-top: 1px solid black">New info</td>
                               </tr>
                             </table>
                           </li>
                           <li>
-                            <span contenteditable="true">...</span>
+                            <span contenteditable="true" spellcheck="false">...</span>
                           </li>
                         </ul>
                       </li>
@@ -99,39 +135,34 @@
                     </ul>
                   </li>
                 </ul>
-
-
-
-
-
               </li>
               <li>
                 <div>
-                  <span contenteditable="true">...</span>
+                  <span contenteditable="true" spellcheck="false">...</span>
                 </div>
               </li>
             </ul>
           </li>
           <li>
             <div>
-              <span contenteditable="true">Artigiani</span>
+              <span contenteditable="true" spellcheck="false">Artigiani</span>
             </div>
           </li>
           <li>
             <div>
-              <span contenteditable="true">...</span>
+              <span contenteditable="true" spellcheck="false">...</span>
             </div>
           </li>
         </ul>
       </li>
       <li>
         <div>
-          <span contenteditable="true">...</span>
+          <span contenteditable="true" spellcheck="false">...</span>
         </div>
       </li>
       <li>
         <div>
-          <span contenteditable="true">...</span>
+          <span contenteditable="true" spellcheck="false">...</span>
         </div>
       </li>
     </ul>
