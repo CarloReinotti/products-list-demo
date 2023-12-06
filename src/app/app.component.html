@@ -8,7 +8,7 @@
     <ul>
       <li>
         <div>
-          <button (click)="toggleNode(0)" style="margin-right: 1rem;">
+          <button (click)="toggleNode(0)" class="button">
             <i *ngIf="isNodeExpanded[0]" class="fas fa-arrow-down"></i>
             <i *ngIf="!isNodeExpanded[0]" class="fas fa-arrow-right"></i>
           </button>
@@ -17,7 +17,7 @@
         <ul *ngIf="isNodeExpanded[0]">
           <li>
             <div>
-              <button (click)="toggleNode(1)" style="margin-right: 1rem;">
+              <button (click)="toggleNode(1)" class="button">
                 <i *ngIf="isNodeExpanded[1]" class="fas fa-arrow-down"></i>
                 <i *ngIf="!isNodeExpanded[1]" class="fas fa-arrow-right"></i>
               </button>
@@ -26,7 +26,7 @@
             <ul *ngIf="isNodeExpanded[1]">
               <li>
                 <div>
-                  <button (click)="toggleNode(2)" style="margin-right: 1rem;">
+                  <button (click)="toggleNode(2)" class="button">
                     <i *ngIf="isNodeExpanded[2]" class="fas fa-arrow-down"></i>
                     <i *ngIf="!isNodeExpanded[2]" class="fas fa-arrow-right"></i>
                   </button>
@@ -35,7 +35,7 @@
                 <ul *ngIf="isNodeExpanded[2]">
                   <li>
                     <div>
-                      <button (click)="toggleNode(3)" style="margin-right: 1rem;">
+                      <button (click)="toggleNode(3)" class="button">
                         <i *ngIf="isNodeExpanded[3]" class="fas fa-arrow-down"></i>
                         <i *ngIf="!isNodeExpanded[3]" class="fas fa-arrow-right"></i>
                       </button>
@@ -52,7 +52,7 @@
                   </li>
                   <li>
                     <div>
-                      <button (click)="toggleNode(4)" style="margin-right: 1rem;">
+                      <button (click)="toggleNode(4)" class="button">
                         <i *ngIf="isNodeExpanded[4]" class="fas fa-arrow-down"></i>
                         <i *ngIf="!isNodeExpanded[4]" class="fas fa-arrow-right"></i>
                       </button>
@@ -61,7 +61,7 @@
                     <ul *ngIf="isNodeExpanded[4]">
                       <li>
                         <div>
-                          <button (click)="toggleNode(5)" style="margin-right: 1rem;">
+                          <button (click)="toggleNode(5)" class="button">
                             <i *ngIf="isNodeExpanded[5]" class="fas fa-arrow-down"></i>
                             <i *ngIf="!isNodeExpanded[5]" class="fas fa-arrow-right"></i>
                           </button>
@@ -78,7 +78,7 @@
                       </li>
                       <li>
                         <div>
-                          <button (click)="toggleNode(6)" style="margin-right: 1rem;">
+                          <button (click)="toggleNode(6)" class="button">
                             <i *ngIf="isNodeExpanded[6]" class="fas fa-arrow-down"></i>
                             <i *ngIf="!isNodeExpanded[6]" class="fas fa-arrow-right"></i>
                           </button>
@@ -95,7 +95,7 @@
                       </li>
                       <li>
                         <div>
-                          <button (click)="toggleNode(7)" style="margin-right: 1rem;">
+                          <button (click)="toggleNode(7)" class="button">
                             <i *ngIf="isNodeExpanded[7]" class="fas fa-arrow-down"></i>
                             <i *ngIf="!isNodeExpanded[7]" class="fas fa-arrow-right"></i>
                           </button>
@@ -104,7 +104,7 @@
                         <ul *ngIf="isNodeExpanded[7]">
                           <li>
                             <div>
-                              <button (click)="toggleNode(8)" style="margin-right: 1rem;">
+                              <button (click)="toggleNode(8)" class="button">
                                 <i *ngIf="isNodeExpanded[8]" class="fas fa-arrow-down"></i>
                                 <i *ngIf="!isNodeExpanded[8]" class="fas fa-arrow-right"></i>
                               </button>
@@ -168,5 +168,4 @@
     </ul>
   </div>
 </div>
-
 
