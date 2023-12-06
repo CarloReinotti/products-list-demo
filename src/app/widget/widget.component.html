@@ -1,0 +1,24 @@
+<div class="border">
+  <div class="tree">
+    <ul>
+      <li *ngFor="let node of tree">
+        <div>
+          <span contenteditable="true">{{ node.name }}</span>
+        </div>
+        <ul *ngIf="node.children && node.expanded">
+          <li *ngFor="let child of node.children">
+            <div>
+              <span contenteditable="true">{{ child.name }}</span>
+            </div>
+            <table *ngIf="child.children && child.expanded">
+              <tr *ngFor="let leaf of child.children">
+                <td contenteditable="true"></td>
+                <td contenteditable="true"></td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
